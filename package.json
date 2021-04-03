@@ -1,0 +1,30 @@
+{
+  "name": "statistics_calculator_is219",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node src/Calculator.js",
+    "coverage": "jest --coverage",
+    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
+  },
+  "keywords": [],
+  "author": "Richard Jeong",
+  "license": "",
+  "devDependencies": {
+    "coveralls": "^3.1.0",
+    "jest": "^26.6.3",
+    "jstat": "^1.9.4",
+    "seedrandom": "^3.0.5",
+    "stats-lib": "^1.1.2"
+  },
+  "dependencies": {
+    "array-sort": "^1.0.0",
+    "compute-covariance": "^1.0.1",
+    "compute-skewness": "^1.0.1",
+    "csv-parse": "^4.15.3",
+    "mathjs": "^9.2.0",
+    "random": "^3.0.3"
+  }
+}
