@@ -33,7 +33,7 @@ test('Calculator Quotient function', () => {
     let calculation = calculator.Division(2,4);
     expect(calculation.n1).toBe(2);
     expect(calculation.n2).toBe(4);
-    expect(calculation.operation).toBe(Divide);
+    expect(calculation.op).toBe(Divide);
     expect(calculation.GetResult()).toBe(2);
 });
 test('Calculator Square function', () => {
@@ -45,12 +45,12 @@ test('Calculator Square function', () => {
 });
 test('Calculator Square Root function', () => {
     let calculation = calculator.Root(4);
-    expect(calculation.a).toBe(4);
-    expect(calculation.b).toBe(2);
-    expect(calculation.operation).toBe(Root);
+    expect(calculation.n1).toBe(4);
+    expect(calculation.n2).toBe(2);
+    expect(calculation.op).toBe(Root);
     expect(calculation.GetResult()).toBe(2);
 });
-test('Calculator ClearHistory', () => {
+test('Calculator Clear', () => {
     calculator.Addition(1,2);
     calculator.Clear();
     expect(calculator.Calculations.length).toBe(0);
@@ -88,7 +88,7 @@ test('Calculator get last Calculation', () => {
     calculator.Root(4);
     calculator.Square(4);
     calculator.Addition(4,2);
-    expect(calculator.GetLastCalculation().operation).toBe(Add);
+    expect(calculator.GetLastCalculation().op).toBe(Add);
 });
 
 test('Calculator copy function', () => {
