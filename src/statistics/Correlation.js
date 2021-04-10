@@ -1,7 +1,7 @@
-const Multiply = require('../operations/Multiply');
-const Mean = require('./Mean');
-const Add = require('../operations/Add');
-const Variance = require('./Variance');
-const Math = require('mathjs');
 const Stats = require('stats-lib');
 
+function Correlation(val1, val2) {
+    return Stats.corr(val1, val2);
+}
+
+module.exports = Correlation;
