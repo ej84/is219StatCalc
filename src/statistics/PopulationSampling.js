@@ -38,10 +38,10 @@ class PopulationSamplingOperations{
 
     static MarginError(elements, confidencePercentile){
         if (!Array.isArray(elements)){
-            throw new Error('a must be an Array');
+            throw new Error('must be an Array');
         }
         else if (elements.length===0){
-            throw new Error('a cannot be empty');
+            throw new Error('cannot be empty');
         }
         return marginError(elements, confidencePercentile);
     }
