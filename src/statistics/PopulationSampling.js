@@ -1,6 +1,6 @@
 const simpleRandom = require('./populationsampling/SimpRandomSamp');
 const systematic = require('./populationsampling/SystematicSample');
-const confidenceInterval = require('./populationsampling/SimpRandomSamp');
+const confidenceInterval = require('./populationsampling/ConfidenceIntrv');
 const marginError = require('./populationsampling/MarginError');
 const cochran = require('./populationsampling/Cochran');
 const sampleSizeCI = require('./populationsampling/SampleSizeCi');
