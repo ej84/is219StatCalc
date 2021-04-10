@@ -1,4 +1,4 @@
-const simpleRandom = require('../random/');
+const simpleRandom = require('./populationsampling/SimpRandomSamp');
 const systematic = require('./populationsampling/SystematicSample');
 const confidenceInterval = require('./populationsampling/SimpRandomSamp');
 const marginError = require('./populationsampling/MarginError');

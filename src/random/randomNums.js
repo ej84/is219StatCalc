@@ -13,4 +13,4 @@ class randomNumber{
     }
 
 }
-module.exports = randomNumber
+module.exports = randomNumber;

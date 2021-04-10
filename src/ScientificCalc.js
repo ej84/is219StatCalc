@@ -1,8 +1,8 @@
 const Calculator = require("./Calculator");
-const Calculation = require('./Models/Calculation');
-const PopSampOps = require('./Operations/Statistics/PopulationSamplingOperations');
+const Calculation = require('./model/Calculation');
+const PopSampOps = require('./statistics/PopulationSampling');
 
-class ScientificCalculator extends Calculator{
+class ScientificCalc extends Calculator{
     Cochran(precision, confidencePercentile, proportion){
         this.AddCalculation(new Calculation(precision, confidencePercentile, PopSampOps.Cochran,proportion));
         return this.GetLastCalculation();
@@ -28,9 +28,9 @@ class ScientificCalculator extends Calculator{
         return this.GetLastCalculation();
     }
     Copy(){
-        let newCalc = new ScientificCalculator();
+        let newCalc = new ScientificCalc();
         newCalc.Calculations = this.Calculations;
         return newCalc;
     }
 }
-module.exports = ScientificCalculator;
+module.exports = ScientificCalc;
