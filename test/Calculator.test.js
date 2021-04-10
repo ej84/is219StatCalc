@@ -5,7 +5,7 @@ const Subtract= require('../src/operations/Substract')
 const Multiply = require('../src/operations/Multiply')
 const Divide = require('../src/operations/Divide')
 const Square = require('../src/operations/Square')
-const Root = require('../src/Operations/Root')
+const Root = require('../src/operations/Root')
 let calculator = new Calculator();
 
 test('Calculator Add function', () => {
